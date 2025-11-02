@@ -1,4 +1,4 @@
-'use strict';
+
 
     // Scroll to top
     window.scrollTo(0, 0);
