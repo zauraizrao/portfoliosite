@@ -1,5 +1,24 @@
 'use strict';
 
+// Navigation page switching
+const navLinks = document.querySelectorAll('[data-nav-link]');
+const pages = document.querySelectorAll('[data-page]');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove active from all links and pages
+    navLinks.forEach(l => l.classList.remove('active'));
+    pages.forEach(p => p.classList.remove('active'));
+
+    // Add active to clicked link
+    link.classList.add('active');
+
+    // Get page name and activate the corresponding section
+    const pageName = link.textContent.trim().toLowerCase();
+    const activePage = document.querySelector(`[data-page="${pageName}"]`);
+    if (activePage) activePage.classList.add('active');
+  });
+});
 
 
 // element toggle function
