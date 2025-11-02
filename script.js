@@ -1,11 +1,3 @@
-
-
-    // Scroll to top
-    window.scrollTo(0, 0);
-  });
-});
-
-
 // ----------- Element toggle function -----------
 const elementToggleFunc = function (elem) { 
   elem.classList.toggle("active"); 
