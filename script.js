@@ -1,17 +1,3 @@
-// ----------- Element toggle function -----------
-const elementToggleFunc = function (elem) { 
-  elem.classList.toggle("active"); 
-};
-
-
-// ----------- Sidebar toggle (for mobile) -----------
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-if (sidebar && sidebarBtn) {
-  sidebarBtn.addEventListener("click", () => elementToggleFunc(sidebar));
-}
-
 
 // ----------- Testimonials modal logic -----------
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
